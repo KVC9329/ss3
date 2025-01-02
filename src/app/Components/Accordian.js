@@ -6,7 +6,7 @@ const items = [
   {
     title: "Is This Any Fake Consultancy?",
     content:
-      "KVC Consulatnsts Ltd is a trustworthy company trusted by major MNCs.",
+      "SS Consulatnsts Ltd is a trustworthy company trusted by major MNCs.",
   },
   {
     title: "Is there any placement charges?",
@@ -15,7 +15,7 @@ const items = [
   },
   {
     title: "Is this a new company?",
-    content: "No, KVC Consultants ltd is a realiable company. Placed over 10,000 candidates and having 10+ years of experience",
+    content: "No, SS Consultants ltd is a realiable company. Placed over 10,000 candidates and having 10+ years of experience",
   },
 ];
 

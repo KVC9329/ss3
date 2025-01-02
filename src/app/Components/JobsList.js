@@ -66,7 +66,7 @@ const JobList = () => {
   if (loading) {
     return <div className="flex flex-col pt-52 items-center h-screen">
             <div className="content-center w-16 h-16 border-4 border-blue-400 border-dashed rounded-full animate-spin"></div>
-            <p className="text-white">Loading job openings...</p>
+            <p className="text-black">Loading job openings...</p>
     </div>;
   }
 

@@ -12,6 +12,8 @@ import { SiSparkpost } from "react-icons/si";
 import { MdOutlinePerson } from "react-icons/md";
 import { GiProcessor } from "react-icons/gi";
 import { CiGlobe } from "react-icons/ci";
+import Carousel from "./Components/Carousal"
+import MobCarousel from "./Components/MobCarousal"
 
 export default function Home() {
   useEffect(() => {
@@ -50,43 +52,66 @@ export default function Home() {
           <div className="h-full my-12 py-12 grid sm:grid-cols-2 bg-black">
           <div>
               <h1 data-aos="fade-up" className="sm:text-5xl text-3xl py-5 text-center font-semibold mb-12 text-white"> Why to Choose, <span className="sm:text-5xl text-4xl py-5 text-center font-semibold underline bg-gradient-to-r from-teal-400 to-blue-500 bg-clip-text text-transparent">SS Consultants</span></h1>
-              <h1 data-aos="fade-up" className="text-center text-xl text-white py-5"><span className="text-7xl text-white font-bold">80% </span>Faster recruitment</h1>
-              <p data-aos="fade-up" className="text-center text-white px-5"><span className="font-bold">AI-Driven Recruitment for Faster, Smarter  Hiring   At SS Consultants, </span>
+              <h1 data-aos="fade-up" className="pl-10 text-start text-xl text-white py-5"><span className="text-7xl text-white font-bold">80% </span>Faster recruitment</h1>
+              <p data-aos="fade-up" className="pl-10 text-start text-white px-5"><span className="font-bold">AI-Driven Recruitment for Faster, Smarter  Hiring   At SS Consultants, </span>
                 <br/>  we use cutting-edge AI technology to transform the way we recruit, delivering faster, more accurate results that save you time and resources.
               </p>
-              <p data-aos="fade-up" className="text-center text-white py-5"><span className="font-bold">Expertise, </span>
+              <p data-aos="fade-up" className="pl-10 text-start text-white py-5"><span className="font-bold text-2xl">Expertise, </span>
                 <br/>  Experienced recruiters in diverse sectors
               </p>
-              <p data-aos="fade-up" className="text-center text-white py-5"><span className="font-bold">Speed, </span>
+              <p data-aos="fade-up" className="pl-10 text-start text-white py-5"><span className="font-bold text-2xl">Speed, </span>
                 <br/>  Urgent positions filled in record time.
               </p>
-              <p data-aos="fade-up" className="text-center text-white py-5"><span className="font-bold">Global Reach </span>
+              <p data-aos="fade-up" className="pl-10 text-start text-white py-5"><span className="font-bold text-2xl">Global Reach </span>
                 <br/>  Hiring expertise across various geographies and sectors
               </p>        
             </div>
-            <div className="h-full grid grid-cols-2 gap-5 mx-12">
-              <div className="bg-slate-100 gradient-hover-box rounded-lg drop-shadow shadow-md py-12 px-5">
+            <div className="h-full hidden sm:grid grid-cols-2 gap-5 mx-12">
+              <div data-aos="fade-up" className="bg-slate-100 gradient-hover-box rounded-lg drop-shadow shadow-md py-12 px-5">
                 <h1 className="text-7xl text-orange-500 pt-12"><SiSparkpost /></h1>
                 <h1 className="text-start pl-3 text-2xl font-semibold">Speed</h1>
                 <p className="text-start pl-3 text-gray-700 text-wrap"> Urgent positions filled in record time.</p>
               </div>
-              <div className="bg-slate-100 gradient-hover-box rounded-lg drop-shadow shadow-md py-12 px-5">
+              <div data-aos="fade-up" className="bg-slate-100 gradient-hover-box rounded-lg drop-shadow shadow-md py-12 px-5">
                 <h1 className="text-7xl text-green-500 pt-12"><MdOutlinePerson /></h1>
                 <h1 className="text-start pl-3 text-2xl font-semibold">Expertise</h1>
                 <p className="text-start pl-3 text-gray-700 text-wrap">Experienced recruiters in diverse sectors</p>
               </div>
-              <div className="bg-slate-100 gradient-hover-box rounded-lg drop-shadow shadow-md py-12 px-5">
+              <div data-aos="fade-up" className="bg-slate-100 gradient-hover-box rounded-lg drop-shadow shadow-md py-12 px-5">
                 <h1 className="text-7xl text-red-500 pl-3"><GiProcessor /></h1>
                 <h1 className="text-start pl-3 text-2xl font-semibold">AI-Driven</h1>
                 <p className="text-start pl-3 text-gray-700 text-wrap">Automated processes for efficiency</p>
               </div>
-              <div className="bg-slate-100 gradient-hover-box rounded-lg drop-shadow shadow-md py-12 px-5">
+              <div data-aos="fade-up" className="bg-slate-100 gradient-hover-box rounded-lg drop-shadow shadow-md py-12 px-5">
                 <h1 className="text-7xl text-black pl-3 content-center"><CiGlobe /></h1>
                 <h1 className="pl-3 text-2xl text-start font-semibold">Global Reach</h1>
                 <p className="text-start pl-3 text-gray-700 text-wrap">Hiring expertise across various geographies and sectors</p>
               </div>
             </div>
           </div>  
+
+          <div className="h-full hidden sm:grid sm:grid-cols-12 px-5 my-12">
+            <div data-aos="fade-up" className="col-span-6 content-center">
+              <Carousel />
+            </div>
+            <div className="col-span-6 content-center">
+              <h1 data-aos="fade-up" className="col-span-12 sm:text-5xl text-3xl py-5 text-center font-semibold text-black"> Hiring, <span className="sm:text-5xl text-4xl py-5 text-center font-semibold underline bg-gradient-to-r from-teal-400 to-blue-500 bg-clip-text text-transparent">Sectors</span></h1>
+              <p data-aos="fade-up" className="text-wrap px-7">This data represents various industries and sectors, highlighting their core offerings and specialized resources, such as finance, BPO, IT, hospitality, banking, edutech, fintech, retail, FMCG, NBFC, and telecom. Each sector's description emphasizes unique services, from customer support to innovative technology solutions.</p>
+            </div>
+          </div>
+
+          <div className="h-screen flex flex-col sm:hidden ">
+            <h1 data-aos="fade-up" className="sm:text-5xl text-3xl py-5 text-center font-semibold text-black"> Hiring, <span className="sm:text-5xl text-4xl py-5 text-center font-semibold underline bg-gradient-to-r from-teal-400 to-blue-500 bg-clip-text text-transparent">Sectors</span></h1>
+            <p data-aos="fade-up" className="text-wrap px-7 py-2">This data represents various industries and sectors, highlighting their core offerings and specialized resources, such as finance, BPO, IT, hospitality, banking, edutech, fintech, retail, FMCG, NBFC, and telecom. Each sector's description emphasizes unique services, from customer support to innovative technology solutions.</p>
+            <div data-aos="fade-up" className="h-screen"> 
+              <MobCarousel/>
+            </div>
+          </div>
+ 
+          <div className="h-full grid sm:grid-cols-2 my-7">
+            <h1 data-aos="fade-up" className="sm:text-5xl text-3xl content-center text-center">Frequently Asked <br/> Questions </h1>
+            <div data-aos="fade-up"><Example/></div>
+          </div>
           
             <button class="bg-gradient-to-r from-indigo-800 to-pink-800 text-white py-1 w-screen 500"></button>
         </div>

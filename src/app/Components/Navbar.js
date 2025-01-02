@@ -3,6 +3,8 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { IoIosArrowDown } from "react-icons/io";
+import { RxCross1 } from "react-icons/rx";
 
 const Navbar = () => {
   const [scroll, setScroll] = useState(false);
@@ -55,9 +57,9 @@ const Navbar = () => {
             aria-label="Toggle menu"
           >
             {menuOpen ? (
-              <span>&#x2715;</span> // X sign
+              <span><RxCross1 /></span> // X sign
             ) : (
-              <span>&#9776;</span> // Hamburger menu
+              <span><IoIosArrowDown /></span> // Hamburger menu
             )}
           </button>
         </div>
