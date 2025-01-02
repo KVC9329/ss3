@@ -7,7 +7,7 @@ import Navbar from '../Components/Navbar';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const contact = () => {
+const Contact = () => {
   useEffect(() => {
       AOS.init({
         duration: 700, // Animation duration in ms
@@ -40,4 +40,4 @@ const contact = () => {
   )
 }
 
-export default contact
+export default Contact

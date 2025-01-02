@@ -7,7 +7,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
 
-const jobs = () => {
+const Jobs = () => {
   useEffect(() => {
       AOS.init({
         duration: 700, // Animation duration in ms
@@ -29,4 +29,4 @@ const jobs = () => {
   )
 }
 
-export default jobs
+export default Jobs

@@ -4,7 +4,7 @@ import React from 'react'
 import { UserButton, useUser, isLoaded, isSignedIn } from '@clerk/nextjs'
 // import { ChartComponent } from '../Components/Chart'
 
-const dashboard = () => {
+const Dashboard = () => {
   const {isLoaded, isSignedIn, user} = useUser()
   console.log(user)
     if (!isLoaded) {
@@ -41,4 +41,4 @@ const dashboard = () => {
   )
 }
 
-export default dashboard
+export default Dashboard

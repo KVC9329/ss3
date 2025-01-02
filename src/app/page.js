@@ -96,13 +96,13 @@ export default function Home() {
             </div>
             <div className="col-span-6 content-center">
               <h1 data-aos="fade-up" className="col-span-12 sm:text-5xl text-3xl py-5 text-center font-semibold text-black"> Hiring, <span className="sm:text-5xl text-4xl py-5 text-center font-semibold underline bg-gradient-to-r from-teal-400 to-blue-500 bg-clip-text text-transparent">Sectors</span></h1>
-              <p data-aos="fade-up" className="text-wrap px-7">This data represents various industries and sectors, highlighting their core offerings and specialized resources, such as finance, BPO, IT, hospitality, banking, edutech, fintech, retail, FMCG, NBFC, and telecom. Each sector's description emphasizes unique services, from customer support to innovative technology solutions.</p>
+              <p data-aos="fade-up" className="text-wrap px-7">This data represents various industries and sectors, highlighting their core offerings and specialized resources, such as finance, BPO, IT, hospitality, banking, edutech, fintech, retail, FMCG, NBFC, and telecom. Each sector description emphasizes unique services, from customer support to innovative technology solutions.</p>
             </div>
           </div>
 
           <div className="h-screen flex flex-col sm:hidden ">
             <h1 data-aos="fade-up" className="sm:text-5xl text-3xl py-5 text-center font-semibold text-black"> Hiring, <span className="sm:text-5xl text-4xl py-5 text-center font-semibold underline bg-gradient-to-r from-teal-400 to-blue-500 bg-clip-text text-transparent">Sectors</span></h1>
-            <p data-aos="fade-up" className="text-wrap px-7 py-2">This data represents various industries and sectors, highlighting their core offerings and specialized resources, such as finance, BPO, IT, hospitality, banking, edutech, fintech, retail, FMCG, NBFC, and telecom. Each sector's description emphasizes unique services, from customer support to innovative technology solutions.</p>
+            <p data-aos="fade-up" className="text-wrap px-7 py-2">This data represents various industries and sectors, highlighting their core offerings and specialized resources, such as finance, BPO, IT, hospitality, banking, edutech, fintech, retail, FMCG, NBFC, and telecom. Each sector description emphasizes unique services, from customer support to innovative technology solutions.</p>
             <div data-aos="fade-up" className="h-screen"> 
               <MobCarousel/>
             </div>
