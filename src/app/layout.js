@@ -22,8 +22,8 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "KVC consultants ltd",
-  description: "A simple UI to handle menus",
+  title: "SS consultants ltd",
+  description: "SS CONSULTANTS LTD : is a brainchild of qualified professionals, each with over 15 years of rich and diversified corporate exposure in fields spanning sales, customer service, project management, financial markets, education, learning & development.",
 };
 
 export default function RootLayout({ children }) {
