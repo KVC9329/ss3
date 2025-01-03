@@ -16,11 +16,11 @@ const Footer = () => {
             </div>
             <div>
                 <p className="font-bold text-white py-2"> Quick Links : </p>
-                <div className="sm:grid sm:grid-cols-6 py-2">
-                    <p className="text-white hover:font-semibold py-1"><Link href="/">about us</Link></p>
-                    <p className="text-white hover:font-semibold py-1"><Link href="/">contact us</Link></p>
-                    <p className="text-white hover:font-semibold py-1"><Link href="/">Job postings</Link></p>
-                    <p className="text-white hover:font-semibold py-1"><Link href="#">gallary</Link></p>
+                <div className="grid grid-cols-4 py-2">
+                    <p className="text-white text-center hover:font-semibold py-1"><Link href="/about">about us</Link></p>
+                    <p className="text-white text-center hover:font-semibold py-1"><Link href="/contact">contact us</Link></p>
+                    <p className="text-white text-center hover:font-semibold py-1"><Link href="/jobs">Job postings</Link></p>
+                    <p className="text-white text-center hover:font-semibold py-1"><Link href="#">gallary</Link></p>
                 </div>
             </div>
         </div>

@@ -36,13 +36,13 @@ export default function Home() {
             95% accuracy in matching candidates to job profiles, using AI-driven technology
             60% lower cost-per-hire through streamlined processes and automation
             </p>
-            <div data-aos="fade-up">
-              <button className="bg-black text-white px-5 py-2 rounded-full my-12 hover:bg-[#fc4a1a] to-[#E100FF] mx-2 duration-500">Contact us <span className="pb-5">&rarr;</span></button>
-              <button className="bg-transparent text-white ring-2 ring-white px-5 py-2 rounded-full my-12 hover:bg-white hover:text-black duration-500"> Explore </button>
+            <div data-aos="fade-up" className="my-12">
+              <Link href="/contact" className="bg-black text-white px-5 py-2 rounded-full my-12 hover:bg-[#fc4a1a] to-[#E100FF] mx-2 duration-500">Contact us <span className="pb-5">&rarr;</span></Link>
+              <Link href="#Explore" className="bg-transparent text-white ring-2 ring-white px-5 py-2 rounded-full my-12 hover:bg-white hover:text-black duration-500"> Explore </Link>
             </div>
           </div>
           
-          <div className="h-screen content-center justify-items-center bg-gradient-to-b from-white to-blue-100">
+          <div id="Explore" className="h-screen content-center justify-items-center bg-gradient-to-b from-white to-blue-100">
             <h1 data-aos="fade-up" className="sm:text-5xl text-3xl py-5 text-center font-semibold">Our Hiring partners</h1>
             <div data-aos="fade-up" className="mx-2">
               <Comapnies/>
