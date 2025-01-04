@@ -1,8 +1,6 @@
-'use client'
-
-import React from 'react'
+"use client"
 import { UserButton, useUser, isLoaded, isSignedIn } from '@clerk/nextjs'
-// import { ChartComponent } from '../Components/Chart'
+import Tabsview from '../Components/Tabs'
 
 const Dashboard = () => {
   const {isLoaded, isSignedIn, user} = useUser()
@@ -28,14 +26,15 @@ const Dashboard = () => {
         <div className='col-span-12 sm:col-span-9 text-start'>
         <h1 className='sm:hidden text-5xl text-end sm:pr-7'><UserButton /></h1>
         <h1 className='text-2xl'>Hello, <span className='text-green-500'>{firstName}</span> <br/> Welcome to your dashboard</h1>
-          <h1>content</h1>
-          {/* <ChartComponent/> */}
         </div>
         <div className='hidden sm:block sm:col-span-3 border-left-2 border-r-2 border-green-800'>
           <h1 className='text-5xl text-end pr-7'><UserButton /></h1>
           <h1 className='text-2xl text-end pr-5'>{fullName}</h1>
           <h1 className='text-md text-end pr-5'>{email}</h1>
         </div>
+      </div>
+      <div className='flex justify-start px-5'>
+          <Tabsview/>
       </div>
     </>
   )
