@@ -1,20 +1,18 @@
 "use client"
 import { UserButton, useUser, isLoaded, isSignedIn } from '@clerk/nextjs'
 import Tabsview from '../Components/Tabs'
+import { useRouter } from 'next/navigation'
 
 const Dashboard = () => {
   const {isLoaded, isSignedIn, user} = useUser()
+  const router = useRouter()
+
   console.log(user)
     if (!isLoaded) {
       return <div className="flex flex-col pt-52 items-center h-screen">
       <div className="content-center w-16 h-16 border-4 border-blue-400 border-dashed rounded-full animate-spin"></div>
-      <p className="text-black">Loading...</p>
-</div>
-    }
-
-    if (!isSignedIn) {
-      // You could also add a redirect to the sign-in page here
-      return null
+        <p className="text-black">Loading...</p>
+      </div>
     }
 
     const firstName = user?.firstName || "Guest";  // Fallback to "Guest" if firstName is undefined

@@ -7,7 +7,7 @@ import LeavesData from "./LeavesData"
 const Tabsview = () => {
     return (
         <>
-            <Tabs defaultValue="account" className="w-[400px]">
+            <Tabs defaultValue="overall" className="w-[400px]">
                 <TabsList>
                     <TabsTrigger value="overall">Overall</TabsTrigger>
                     <TabsTrigger value="leaves">Leaves</TabsTrigger>
