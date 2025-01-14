@@ -2,7 +2,8 @@
 
 import { TrendingUp } from "lucide-react"
 import { LabelList, RadialBar, RadialBarChart } from "recharts"
-
+import { useEffect, useState } from "react"
+import { useUser} from '@clerk/nextjs'
 import {
   Card,
   CardContent,
@@ -17,15 +18,17 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart"
-const chartData = [
-  { browser: "Leaves", visitors: 275, fill: "var(--color-chrome)" },
-  { browser: "Leads", visitors: 200, fill: "var(--color-safari)" },
-  { browser: "Tasks", visitors: 187, fill: "var(--color-firefox)" },
-]
+import { getUserData } from "./Tabs"
+
+// const chartData = [
+//   { browser: "Leaves", visitors: 275, fill: "var(--color-chrome)" },
+//   { browser: "Leads", visitors: 200, fill: "var(--color-safari)" },
+//   { browser: "Tasks", visitors: 187, fill: "var(--color-firefox)" },
+// ]
 
 const chartConfig = {
   visitors: {
-    label: "Visitors",
+    label: "Data",
   },
   chrome: {
     label: "Chrome",
@@ -50,6 +53,44 @@ const chartConfig = {
 } 
 
 export default function Component() {
+  // const { user } = useUser()
+  // const res = fetch(
+  //   `https://script.google.com/macros/s/AKfycbz-eaudNZH9o2I_Q3VA_pXdgkTV6bDqO3GmSTqXsmGS6YxVDQ8qhMv-uXBd-l--JJd0Rg/exec?id=${user?.id}`,
+  //   { cache: 'force-cache' } 
+  // );
+
+  // console.log("result"+res)
+  
+  // if (!res.ok) {
+  //   throw new Error('Failed to fetch user data');
+  // }
+  
+  // res.json();
+  
+  // const [recruiterData, setRecruiterData] = useState([{ Leaves: "...", Leads: "..." }])
+  // const recruiterID = user?.id
+
+  //   useEffect(() => {
+  //       const fetchData = async () => {
+  //           try {
+  //               const data = await getUserData(recruiterID)
+  //               setRecruiterData(data)
+  //           } catch (error) {
+  //               console.error('Error fetching user data:', error)
+  //           }
+  //       }
+
+  //       if (recruiterID !== "No User ID") {
+  //           fetchData()
+  //       }
+  //   }, [recruiterID])
+
+    const chartData = [
+      { browser: "Leaves", visitors: 63, fill: "var(--color-chrome)" },
+      { browser: "Leads", visitors: 27, fill: "var(--color-safari)" },
+      { browser: "Tasks", visitors: 47, fill: "var(--color-firefox)" },
+    ]
+
   return (
     <Card className="flex flex-col">
       <CardHeader className="items-center pb-0">
@@ -94,6 +135,3 @@ export default function Component() {
     </Card>
   )
 }
-
-
-

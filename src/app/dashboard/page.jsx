@@ -3,6 +3,17 @@ import { UserButton, useUser, isLoaded, isSignedIn } from '@clerk/nextjs'
 import Tabsview from '../Components/Tabs'
 import { useRouter } from 'next/navigation'
 
+const getData = async () => {
+  const res = await fetch('https://script.google.com/macros/s/AKfycbz-eaudNZH9o2I_Q3VA_pXdgkTV6bDqO3GmSTqXsmGS6YxVDQ8qhMv-uXBd-l--JJd0Rg/exec', { cache: 'force-cache' })
+
+  if (!res.ok) {
+    // This will activate the closest `error.js` Error Boundary
+    throw new Error('Failed to fetch data')
+  }
+
+  return res.json()
+}
+
 const Dashboard = () => {
   const {isLoaded, isSignedIn, user} = useUser()
   const router = useRouter()
