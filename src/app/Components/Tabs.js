@@ -49,7 +49,7 @@ const Tabsview = () => {
                     <TabsTrigger value="overall">Overall</TabsTrigger>
                     <TabsTrigger value="leaves">Leaves</TabsTrigger>
                     <TabsTrigger value="leads">Leads</TabsTrigger>
-                    <TabsTrigger value="tasks">Tasks</TabsTrigger>
+                    {/* <TabsTrigger value="tasks">Tasks</TabsTrigger> */}
                 </TabsList>
                 <TabsContent value="overall"><LeaveChart/></TabsContent>
                 <TabsContent value="leaves">

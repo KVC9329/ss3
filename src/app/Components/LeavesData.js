@@ -59,6 +59,15 @@ const data = [
 ]
 
 export default function LeavesData() {
+  const data = [
+    { name: 'John Doe', email: 'john@example.com', phone: '123-456-7890' },
+    { name: 'Jane Smith', email: 'jane@example.com', phone: '987-654-3210' },
+    { name: 'Alice Johnson', email: 'alice@example.com', phone: '555-666-7777' },
+    { name: 'Ayush Sonone', email: 'Ayush@example.com', phone: '123-456-7890' },
+    { name: 'Jhon wick', email: 'jhon@example.com', phone: '987-654-3210' },
+    { name: 'Alice in borderland', email: 'alice@example.com', phone: '555-666-7777' }
+  ];
+
   const [goal, setGoal] = React.useState(350)
 
   function onClick(adjustment) {
@@ -76,52 +85,27 @@ export default function LeavesData() {
             <DrawerTitle>Total Leaves Taken</DrawerTitle>
             <DrawerDescription>Your leaves of this month.</DrawerDescription>
           </DrawerHeader>
-          <div className="p-4 pb-0">
-            {/* <div className="flex items-center justify-center space-x-2">
-              <Button
-                variant="outline"
-                size="icon"
-                className="h-8 w-8 shrink-0 rounded-full"
-                onClick={() => onClick(-10)}
-                disabled={goal <= 200}
-              >
-                <Minus />
-                <span className="sr-only">Decrease</span>
-              </Button>
-              <div className="flex-1 text-center">
-                <div className="text-7xl font-bold tracking-tighter">
-                  {goal}
-                </div>
-                <div className="text-[0.70rem] uppercase text-muted-foreground">
-                  Calories/day
-                </div>
-              </div>
-              <Button
-                variant="outline"
-                size="icon"
-                className="h-8 w-8 shrink-0 rounded-full"
-                onClick={() => onClick(10)}
-                disabled={goal >= 400}
-              >
-                <Plus />
-                <span className="sr-only">Increase</span>
-              </Button>
-            </div> */}
-            {/* <div className="mt-3 h-[120px]">
-              <ResponsiveContainer width="100%" height="100%">
-                <BarChart data={data}>
-                  <Bar
-                    dataKey="goal"
-                    style={
-                      {
-                        fill: "hsl(var(--foreground))",
-                        opacity: 0.9,
-                      } 
-                    }
-                  />
-                </BarChart>
-              </ResponsiveContainer>
-            </div> */}
+          <h1>The leaves list will show here</h1>
+          <div className="max-h-60 overflow-y-auto border border-gray-300 rounded">
+            <h2 className="text-xl font-bold mb-4">User Info Table</h2>
+            <table className="min-w-full border border-gray-300">
+              <thead className="bg-gray-200">
+                <tr>
+                  <th className="border px-4 py-2">Name</th>
+                  <th className="border px-4 py-2">Email</th>
+                  <th className="border px-4 py-2">Phone</th>
+                </tr>
+              </thead>
+              <tbody className="overflow-x-hidden">
+                {data.map((user, index) => (
+                  <tr key={index} className="text-center">
+                    <td className="border px-4 py-2">{user.name}</td>
+                    <td className="border px-4 py-2">{user.email}</td>
+                    <td className="border px-4 py-2">{user.phone}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
           <DrawerFooter>
             {/* <Button>Submit</Button> */}
